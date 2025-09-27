@@ -15,7 +15,7 @@ public class Main {
             else if ("--seed".equals(args[i]) && i+1<args.length) seed = Long.parseLong(args[++i]);
         }
         if ("mergesort".equalsIgnoreCase(algo)){
-            int[] a = Utils.randomArray(n, seed);
+            int[] a = Utils.randomArray(n, (int) seed);
             long t0 = System.currentTimeMillis();
             MergeSortSimple.sort(a);
             long t1 = System.currentTimeMillis();

@@ -5,7 +5,7 @@
   <groupId>edu.junior</groupId>
   <artifactId>DA_assegment1</artifactId>
   <version>0.1.0</version>
-  <name>DAC Junior Baseline</name>
+  <name>DA_assegment1</name>
   <properties>
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>

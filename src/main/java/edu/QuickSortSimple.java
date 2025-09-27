@@ -5,8 +5,13 @@ import java.util.Random;
 
 public class QuickSortSimple {
     public static void sort(int[] a, long seed){
+        long startTime = System.nanoTime();
+        int comparisons = 0;
         Random rnd = new Random(seed);
         sort(a, 0, a.length-1, rnd);
+        long endTime = System.nanoTime();
+        System.out.println("QuickSort Time: " + (endTime - startTime) + " ns");
+        System.out.println("QuickSort Comparisons: " + comparisons);
     }
     private static void sort(int[] a, int l, int r, Random rnd){
         if (l>=r) return;

@@ -3,8 +3,13 @@ package edu;
 
 public class MergeSortSimple {
     public static void sort(int[] a){
+        long startTime = System.nanoTime();
+        int comparisons = 0;
         if (a.length < 2) return;
         sort(a, 0, a.length-1);
+        long endTime = System.nanoTime();
+        System.out.println("MergeSort Time: " + (endTime - startTime) + " ns");
+        System.out.println("MergeSort Comparisons: " + comparisons);
     }
     private static void sort(int[] a, int l, int r){
         if (l>=r) return;

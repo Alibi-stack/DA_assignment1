@@ -1,3 +1,4 @@
+package edu;
 
 import edu.MergeSortSimple;
 import edu.QuickSortSimple;
